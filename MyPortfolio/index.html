@@ -111,6 +111,7 @@
   .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 8px; }
   .exp-bullets li { font-size: 0.9rem; color: var(--text-muted); padding-left: 20px; position: relative; line-height: 1.6; }
   .exp-bullets li::before { content: ''; position: absolute; left: 0; top: 9px; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); opacity: 0.6; }
+  .exp-bullets strong { color: var(--text); font-weight: 600; }
 
   /* PROJECTS */
   #projects { background: var(--bg-secondary); }
@@ -227,7 +228,7 @@
           <p class="hero-desc">Building scalable web applications and intelligent data-driven solutions.</p>
           <div class="hero-cta">
             <a href="#projects" class="btn-primary">View Projects</a>
-            <a href="#contact" class="btn-secondary">Download Resume</a>
+            <a href="resume.pdf" download class="btn-secondary">Download Resume</a>
           </div>
           <div class="hero-socials">
             <a href="https://linkedin.com/in/agrazgopu" target="_blank" class="social-link" title="LinkedIn">
@@ -242,7 +243,7 @@
           </div>
         </div>
         <div class="hero-image">
-          <img src="photo.jpeg" class="hero-photo-placeholder" style="object-fit:cover;object-position: center 55%;;" alt="Gopu Agraz">
+          <img src="photo.jpeg" class="hero-photo-placeholder" style="object-fit:cover;object-position: center 55%;" alt="Gopu Agraz">
         </div>
       </div>
     </div>
@@ -258,12 +259,12 @@
         <div class="about-card">
           <div class="about-card-icon">⚙️</div>
           <h3>Backend Dev</h3>
-          <p>Django, REST APIs, scalable architectures</p>
+          <p>Django, REST APIs, RBAC, scalable architectures</p>
         </div>
         <div class="about-card">
           <div class="about-card-icon">🗄️</div>
           <h3>Data Systems</h3>
-          <p>Database modeling, ETL, analytics pipelines</p>
+          <p>Database modeling, approval workflows, analytics pipelines</p>
         </div>
         <div class="about-card">
           <div class="about-card-icon">🧠</div>
@@ -289,16 +290,16 @@
                 <span class="exp-company">National Informatics Centre (NIC)</span>
               </div>
               <div class="exp-meta">
-                <div class="exp-dates">Jan 2026 – Present</div>
+                <div class="exp-dates">Jan 2026 – Jun 2026</div>
                 <div class="exp-type">Hybrid</div>
               </div>
             </div>
             <ul class="exp-bullets">
-              <li>Built Rajbhasha Digital Reporting Portal using Django, Python, and REST APIs</li>
-              <li>Implemented RBAC (Admin, HOD, User) with approval workflows and dashboard-level access</li>
-              <li>Integrated QPR module, unifying authentication, session management, and database models</li>
-              <li>Refactored multi-app architecture into a single unified Django application</li>
-              <li>Debugged production-level issues involving URL routing, CSRF, auth, and migrations</li>
+              <li>Integrated a standalone <strong>QPR Django application</strong> into the unified Rajbhasha Digital Reporting Portal, resolving authentication, session, routing, and migration conflicts using OOP principles.</li>
+              <li>Built the <strong>Employee Profile Management</strong> module — employee-code validation, master-table autofill, and a 5-stage HOD/Admin approval workflow with field-level edit locking — for 100+ employees.</li>
+              <li>Developed a <strong>searchable, paginated Employee Master</strong> module with designation/state/status filters, reactivation, and deletion handling.</li>
+              <li>Built a <strong>bilingual (Hindi/English) Event Card system</strong> with image upload and dynamic gallery rendering using Django, Bootstrap, and JS Fetch/AJAX.</li>
+              <li>Remediated vulnerabilities surfaced through <strong>whitebox and blackbox penetration testing</strong>, supporting a presentation to NIC Delhi officials for prospective nationwide rollout.</li>
             </ul>
           </div>
         </div>
@@ -316,10 +317,9 @@
               </div>
             </div>
             <ul class="exp-bullets">
-              <li>Developed and launched the Skillbanc Academy Android App using Flutter</li>
-              <li>Integrated animated lessons (Manim), interactive quizzes, and secure authentication</li>
-              <li>Collaborated remotely in an agile team, implementing continuous feedback from the CEO</li>
-              <li>Enhanced math learning accessibility and engagement for school students</li>
+              <li>Engineered and shipped the <strong>Skillbanc Academy Android App</strong> using Flutter, with Manim-animated lessons and interactive quizzes — <strong>500+ downloads</strong> on Google Play.</li>
+              <li>Integrated secure authentication and personalized learning paths, improving accessibility for school students.</li>
+              <li>Collaborated remotely in an agile team, implementing continuous feedback from the CEO.</li>
             </ul>
           </div>
         </div>
@@ -338,19 +338,19 @@
             <div class="project-icon">🐙</div>
             <a href="https://github.com/agraz-19" target="_blank" class="project-link-icon">↗</a>
           </div>
-          <div class="project-title">Rajbhasha Digital Reporting System</div>
-          <div class="project-desc">Dynamic employee form management system with structured validation, ORM-based persistence, approval workflows, and role-based dashboards.</div>
+          <div class="project-title">Rajbhasha Digital Reporting Portal</div>
+          <div class="project-desc">Multilingual employee reporting system with structured validation, ORM-based persistence, multi-stage approval workflows, and role-based dashboards. In pen-testing ahead of nationwide NIC rollout.</div>
           <div class="project-tags">
-            <span class="tag">Django</span><span class="tag">Python</span><span class="tag">REST APIs</span><span class="tag">Bootstrap</span><span class="tag">SQLite</span>
+            <span class="tag">Django</span><span class="tag">Python</span><span class="tag">RBAC</span><span class="tag">Bootstrap</span><span class="tag">AJAX</span>
           </div>
         </div>
         <div class="project-card">
           <div class="project-card-header">
             <div class="project-icon">📊</div>
-            <a href="https://github.com/agraz-19" target="_blank" class="project-link-icon">↗</a>
+            <a href="https://github.com/agraz-19/Business-Analytics-Using-Textual-Data.git" target="_blank" class="project-link-icon">↗</a>
           </div>
           <div class="project-title">Automated Business Analytics Platform</div>
-          <div class="project-desc">Processed 100K+ Amazon food reviews with automated sentiment, entity, and trend extraction. Power BI dashboards for actionable insights.</div>
+          <div class="project-desc">Processed 100K+ Amazon reviews with automated sentiment, entity, and trend extraction. Power BI dashboards for actionable insights.</div>
           <div class="project-tags">
             <span class="tag">Python</span><span class="tag">NLP</span><span class="tag">DistilBERT</span><span class="tag">spaCy</span><span class="tag">Power BI</span>
           </div>
@@ -361,7 +361,7 @@
             <a href="https://github.com/agraz-19" target="_blank" class="project-link-icon">↗</a>
           </div>
           <div class="project-title">Skillbanc Academy App</div>
-          <div class="project-desc">Android app enabling class-wise video streaming with smooth UI. Achieved 1000+ downloads and positive feedback on Google Play Store.</div>
+          <div class="project-desc">Android app enabling class-wise video streaming with smooth UI. Achieved 500+ downloads and positive feedback on Google Play Store.</div>
           <div class="project-tags">
             <span class="tag">Flutter</span><span class="tag">Android Studio</span><span class="tag">Dart</span>
           </div>
@@ -378,7 +378,7 @@
       <div class="skills-grid">
         <div class="skill-category">
           <div class="skill-cat-title">Programming</div>
-          <div class="skill-pills"><span class="skill-pill">Python</span><span class="skill-pill">Java</span><span class="skill-pill">C</span></div>
+          <div class="skill-pills"><span class="skill-pill">Python</span><span class="skill-pill">Java</span><span class="skill-pill">C</span><span class="skill-pill">SQL</span></div>
         </div>
         <div class="skill-category">
           <div class="skill-cat-title">Frameworks &amp; Tools</div>
@@ -390,7 +390,7 @@
         </div>
         <div class="skill-category">
           <div class="skill-cat-title">Concepts</div>
-          <div class="skill-pills"><span class="skill-pill">DSA</span><span class="skill-pill">OOP</span><span class="skill-pill">OS</span><span class="skill-pill">Computer Networks</span></div>
+          <div class="skill-pills"><span class="skill-pill">DSA</span><span class="skill-pill">OOP</span><span class="skill-pill">RBAC</span><span class="skill-pill">Agile</span></div>
         </div>
       </div>
     </div>
@@ -458,7 +458,7 @@
 </main>
 
 <footer>
-  <p>© 2025 Gopu Agraz · Built with care · Hyderabad, India</p>
+  <p>© 2026 Gopu Agraz · Built with care · Hyderabad, India</p>
 </footer>
 
 <script>
